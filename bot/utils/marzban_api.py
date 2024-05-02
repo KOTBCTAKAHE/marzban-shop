@@ -151,7 +151,7 @@ async def generate_marzban_subscription(username: str, good):
             'proxies': ps["proxies"],
             'inbounds': ps["inbounds"],
             'expire': get_subscription_end_date(good['months']),
-            'data_limit': 0,
+            'data_limit': (good['traffic']),
             'data_limit_reset_strategy': "no_reset",
         }
         result = await panel.add_user(user)
