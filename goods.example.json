@@ -5,6 +5,7 @@
             "en": 1,
             "ru": 100
         },
+        "traffic": "10",
         "callback": "simple_vpn",
         "months": 1
     }
